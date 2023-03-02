@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+// SPDX-License-Identifier: WTFPL
+pragma solidity ^0.8.19;
 
 import "forge-std/Test.sol";
 
@@ -10,9 +10,9 @@ contract SushiDAOTest is Test {
 
     SushiDAO dao;
 
-    function setUp() external {
+    function setUp() public payable {
         dao = new SushiDAO();
     }
 
-    function testProposal() external {}
+    function testProposal() public payable {}
 }
